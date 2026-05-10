@@ -7,7 +7,7 @@ A fully functional, object-oriented console-based Chess game implemented from sc
 
 ## 👥 Authors
 * **Zeeshan Ali** 
-* **Hafiz Asad**
+* **Muhammad Asad**
 * **Ammar Ahmad**
 
 ---
