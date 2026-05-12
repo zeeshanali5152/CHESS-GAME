@@ -6,10 +6,13 @@ char Knight::getSymbol() const
     if (color == WHITE) return 'N';
     else return 'n';
 }
+
+//knight move validation
 bool Knight::isValidMove(int toRow, int toCol, Piece* board[8][8]) 
 {
     int rDiff = abs(toRow - row);
     int cDiff = abs(toCol - col);
+    //movement logic of knight
     if ((rDiff == 2 && cDiff == 1) || (rDiff == 1 && cDiff == 2)) 
     {
         if (board[toRow][toCol] == nullptr || board[toRow][toCol]->getColor() != color) return true;

@@ -5,5 +5,6 @@ class Queen : public Piece
 public:
     Queen(Color c, int r, int cy) : Piece(c, r, cy) {}
     char getSymbol() const override;
+    //move validation
     bool isValidMove(int toRow, int toCol, Piece* board[8][8]) override;
 };
