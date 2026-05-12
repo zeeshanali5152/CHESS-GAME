@@ -5,6 +5,7 @@ char Queen::getSymbol() const
     if (color == WHITE) return 'Q';
     else return 'q';
 }
+//validate the move
 bool Queen::isValidMove(int toRow, int toCol, Piece* board[8][8]) 
 {
     int rDiff = abs(toRow - row);

@@ -4,6 +4,8 @@ char Rook::getSymbol() const
     if (color == WHITE) return 'R';
     else return 'r';
 }
+
+//validate the move
 bool Rook::isValidMove(int toRow, int toCol, Piece* board[8][8])
 {
     if (row != toRow && col != toCol) return false;

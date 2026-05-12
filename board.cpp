@@ -9,6 +9,7 @@
 
 using namespace std;
 
+//setting up the board
 Board::Board()
 {
     for (int i = 0; i < 8; i++)
@@ -59,6 +60,7 @@ void Board::initializeBoard()
     for (int i = 0; i < 8; i++) grid[6][i] = new Pawn(WHITE, 6, i);
 }
 
+//displaying the board
 void Board::display() const 
 {
     cout << endl;
@@ -179,6 +181,7 @@ bool Board::movePiece(int startR, int startC, int endR, int endC, Color turn)
     Piece* p = grid[startR][startC];
     if (p == nullptr || p->getColor() != turn) return false;
 
+    //piece move validation
     if (p->isValidMove(endR, endC, grid)) 
     {
         Piece* target = grid[endR][endC];

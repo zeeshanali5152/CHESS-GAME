@@ -29,6 +29,7 @@ int main()
                 cout << "\n>>> RESULT: CHECKMATE! " << (turn == WHITE ? "BLACK WINS!" : "WHITE WINS!") << endl;
                 break;
             }
+            //king capture
             cout << "\n [!] ATTENTION: YOUR KING IS IN CHECK" << endl;
         }
         else if (canMove == false)
@@ -80,6 +81,7 @@ int main()
 
         if (validCase == true && game.movePiece(sRow, sc, eRow, ec, turn)) 
         {
+        //turns setup
             turn = (turn == WHITE) ? BLACK : WHITE;
         }
         else

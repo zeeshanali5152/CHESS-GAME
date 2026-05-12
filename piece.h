@@ -8,6 +8,7 @@ protected:
     int row, col;
     public:
     Piece(Color c, int r, int cy);
+    //virtual destructor to allow each piece to be destroyed separately
     virtual ~Piece();
 
     // Pure virtual functions (Polymorphism)
